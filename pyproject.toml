@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trading-sop-rag"
+version = "0.1.0"
+description = "Okapi BM25 Video Evidence Retriever, 18-Rule Pre-Trade SOP Auditor & Searchable Playbook Portal across 199 YouTube Video Extractions"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+sop-rag = "sop_rag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
